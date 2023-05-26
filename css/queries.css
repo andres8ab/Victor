@@ -1,0 +1,461 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 90em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+
+@media (max-width: 76em) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+    padding-right: 2rem;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .hero {
+    padding: 0 6rem 3rem 4rem;
+  }
+
+  .nav_link:link,
+  .nav_link:visited {
+    font-size: 1.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.5rem;
+  }
+
+  .deal-img-box::after {
+    transform: scale(0.6) rotate(25deg);
+    right: 64%;
+  }
+
+  .deal-img-box::before {
+    transform: scale(0.3);
+  }
+}
+
+@media (max-width: 63em) {
+  html {
+    font-size: 56%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h4 {
+    font-size: 1.8rem;
+  }
+
+  .nav_logo {
+    height: 6rem;
+  }
+
+  .nav_item {
+    margin-left: 2rem;
+  }
+
+  .hero-img {
+    width: 85%;
+  }
+
+  .btn_text {
+    font-size: 1.2rem;
+  }
+
+  .logos img {
+    height: 4rem;
+  }
+}
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .deal-img-box::before {
+    top: -57%;
+  }
+
+  .section__title::after {
+    top: 0%;
+    right: -25%;
+    transform: scale(0.6);
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .nav {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    background-color: #a5d8ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[alt="close-icon"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[alt="menu-icon"] {
+    display: none;
+  }
+
+  .nav_links {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .nav_link:link,
+  .nav_link:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 43em) {
+  html {
+    font-size: 46%;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  h4 {
+    font-size: 2.3rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .mas-info-box {
+    justify-content: space-evenly;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .deal-img-box::after {
+    transform: scale(0.5) rotate(25deg);
+    right: 56%;
+    top: 0%;
+  }
+
+  .deal-img-box::before {
+    transform: scale(0.25);
+  }
+
+  .deal-name {
+    font-size: 2.5rem;
+    letter-spacing: 0.7;
+    margin-top: 2rem;
+    line-height: 3rem;
+  }
+
+  .deal-price {
+    font-size: 5rem;
+    line-height: 0.8px;
+  }
+
+  .deal-price span {
+    font-size: 2.5rem;
+  }
+
+  .old-price {
+    font-size: 3.5rem;
+  }
+
+  .deal-text {
+    font-size: 1.2rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.2rem;
+  }
+
+  .section__title::after {
+    transform: scale(0.5);
+    right: -19%;
+  }
+
+  .footer-logo {
+    transform: scale(0.6);
+  }
+
+  .social-icon {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  .grid {
+    column-gap: 3rem;
+    row-gap: 8rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+    max-width: 100rem;
+    margin: 0;
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 2;
+  }
+
+  .footer-logo {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .logo {
+    transform: translateX(-77px);
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deal-img-box {
+    grid-row: 1;
+  }
+
+  .hero-text-box {
+    text-align: start;
+  }
+
+  .hero {
+    padding: 0 8rem;
+  }
+
+  .logos img {
+    height: 2rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .deal-img-box::before {
+    right: -20%;
+    top: -43%;
+  }
+
+  .deal-img-box::after {
+    transform: scale(0.4) rotate(25deg);
+    right: 66%;
+    top: 6%;
+  }
+
+  .deal-box::after {
+    top: 5%;
+    right: -13%;
+  }
+
+  .deal-name {
+    font-size: 3.5rem;
+  }
+
+  .deal-price {
+    font-size: 7rem;
+  }
+
+  .deal-price span {
+    font-size: 3.5rem;
+  }
+
+  .old-price {
+    font-size: 5rem;
+  }
+
+  .deal-text {
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    transform: translateX(7px) translateY(20px) scale(0.8);
+  }
+
+  .logo-col {
+    align-items: center;
+  }
+
+  .section__title::after {
+    transform: scale(0.4);
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .logo-col,
+  .address-col {
+    grid-column: span 3;
+  }
+
+  .address-col {
+    line-height: 0;
+    padding-top: 8rem;
+  }
+  .nav-col {
+    grid-column: span 3;
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 40%;
+  }
+
+  .heading-secondary {
+    font-size: 2.5rem;
+  }
+
+  .hero {
+    padding: 0 6rem;
+  }
+
+  .logos img {
+    height: 1.8rem;
+  }
+
+  .deal-img-box::before {
+    right: -38%;
+    top: -96%;
+    transform: scale(0.18);
+  }
+
+  .deal-img-box::after {
+    transform: scale(0.3) rotate(25deg);
+    right: 44%;
+    top: -20%;
+  }
+
+  .deal-name {
+    font-size: 2rem;
+  }
+
+  .deal-price {
+    font-size: 4rem;
+  }
+
+  .deal-price span {
+    font-size: 2rem;
+  }
+
+  .old-price {
+    font-size: 3rem;
+  }
+
+  .deal-text {
+    font-size: 1rem;
+  }
+
+  .deal-box::after {
+    top: 5%;
+    right: -19%;
+  }
+
+  .section__title::after {
+    transform: scale(0.3);
+    top: 25%;
+  }
+
+  .info__img {
+    width: 85%;
+  }
+
+  .info::before {
+    font-size: 16rem;
+  }
+
+  .slider__btn {
+    height: 4.5rem;
+    width: 4.5rem;
+  }
+
+  .info_text {
+    font-size: 2.2rem;
+  }
+  .logo {
+    transform: translateX(7px) translateY(20px) scale(0.6);
+  }
+
+  .footer-nav {
+    gap: 0.5rem;
+  }
+}
